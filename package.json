@@ -1,0 +1,27 @@
+{
+  "name": "json-xml-protobuf-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pages/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "proto": "npx pbjs -t static -w commonjs -o src/pb/employee_pb.js proto/employee.proto && mkdir -p src/pb"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "google-protobuf": "^4.0.1",
+    "next": "^16.0.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "protobufjs": "^7.5.4"
+  }
+}
